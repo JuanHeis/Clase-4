@@ -12,7 +12,7 @@ const buttonList = [
   },
   {
     name: "COFFEE",
-    link: "coffee",
+    link: "cafe",
     customCss: "",
     img: "",
   },
@@ -44,7 +44,6 @@ function Header() {
           {/* ToDo: Buscar nombre de forma de escribir este css */}
           <ul className="header__container">
             {buttonList.map((aButton) => {
-              console.log("Esto contiene cada boton", aButton);
               return <HeaderButton data={aButton} />;
             })}
           </ul>
