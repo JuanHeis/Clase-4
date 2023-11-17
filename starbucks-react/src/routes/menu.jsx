@@ -1,12 +1,11 @@
 import React from "react";
 import TittleBar from "../components/titleBar/tittleBar";
-function CafePage() {
+function MenuPage() {
   return (
     <div>
-      <TittleBar text={"Cafe"}></TittleBar>
-      CafePage
+      <TittleBar text={"Menu"}></TittleBar>
     </div>
   );
 }
 
-export default CafePage;
+export default MenuPage;
