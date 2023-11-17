@@ -30,7 +30,7 @@ const buttonList = [
   },
   {
     name: "Localizar tienda",
-    link: "localizar",
+    link: "https://www.google.com.ar/maps/search/Starbucks/@-34.6556054,-58.4823916,11z?entry=ttu",
     customCss: "header__button--right",
     img: "",
   },
@@ -43,8 +43,8 @@ function Header() {
         <div className="wrapper">
           {/* ToDo: Buscar nombre de forma de escribir este css */}
           <ul className="header__container">
-            {buttonList.map((aButton) => {
-              return <HeaderButton data={aButton} />;
+            {buttonList.map((aButton, index) => {
+              return <HeaderButton key={index} data={aButton} />;
             })}
           </ul>
         </div>
